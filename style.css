@@ -1,14 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
 body{
-  /* background-color: black; */
-  color: white;
+  background-color: black; 
+  color: white; 
 }
 
 
 
 .left{
    width: 25vw;
+   padding: 8px;
 }
 
 .right{
   width: 75vw;
+  margin-top: 14px;
+  position: relative;
+}
+
+
+
+.home ul li{
+  display: flex;
+  gap: 15px;
+  width: 14px;
+  list-style: none;
+  padding-top: 14px;
+  font-weight: bold;
+}
+
+.heading{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding-top: 14px;
+  padding: 23px 14px;
+  align-items: center;
+  font-size: 10px;
+}
+
+.heading img{
+   width: 20px;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  gap:11px;
+  color: gray;
+  position: absolute;
+  bottom: 0;
+  padding:10px 0 ;
+}
+
+.footer a{
+  color: gray;
+ text-decoration: none;
+ font-size: 10px;
+}
+
+.library{
+  min-height: 50vh;
+  position:relative;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(34,34,34);
+  height: 72px;
+}
+
+.header > *{
+  padding: 20px;
+}
+
+.spotifyPlaylist {
+  padding: 16px;
+}
+
+.spotifyPlaylist h1 {
+  padding: 16px;
+}
+
+.cardContainer{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 30px;
+  overflow-y:scroll;
+  max-height: 60vh;
+
+}
+
+.card{
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #252525;
+  position: relative;
+  height: 285px;
+ 
+}
+
+.card > *{
+  padding-top: 5px;
+}
+
+.card p{
+  font-size: 14px;
+}
+
+.card img{
+  width: 100%;
+  object-fit: contain;
+} 
+
+.play svg {
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.play{
+  width: 28px;
+    height: 28px;
+    background-color: rgb(35, 185, 35);  
+    border-radius: 50%;      
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 17px;
+    top: 168px;
+    opacity: 1;
+    transition:all 1s ease-out ;
+}
+
+.signupbtn{
+  background-color: black;
+  color: rgb(34,34,34);;
+  font-weight: bold;
+  border-radius: 21px;
+  padding: 10px;
+  width: 79px;
+  border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.signupbtn:hover{
+  color: white;
+  font-size: 0.85rem;
+}
+
+.loginbtn{
+   background-color:white;
+  color: black;
+  border-radius: 21px;
+ padding: 10px;
+  width: 79px;
+  border: none;
+ outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.loginbtn:hover{
+  color:   rgb(34,34,34);
+  font-weight: bold;
+  font-size: 17px;
+  width: 80px;
+}
+
+
+
+.playbar{
+position: absolute;
+bottom: 0;
+left: 0;
+background-color: rgb(33, 58, 33);
+width: 100% ;
+padding: 12px;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+row-gap: 16px;
 }
