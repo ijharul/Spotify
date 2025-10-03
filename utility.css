@@ -44,32 +44,61 @@
 
 .cardContainer {
   overflow-y: auto;
-  height: 60vh; /* or max-height: 60vh */
+  height: 60vh; 
 }
 
-/* Scrollbar Styling (Webkit Browsers: Chrome, Edge, Safari) */
+
 .cardContainer::-webkit-scrollbar {
-  width: 8px;              /* scrollbar width */
+  width: 8px;             
 }
 
 .cardContainer::-webkit-scrollbar-track {
-  background: #222;         /* track background (dark gray) */
+  background: #222;        
 }
 
 .cardContainer::-webkit-scrollbar-thumb {
-  background: #000;         /* scrollbar color (black) */
-  border-radius: 4px;       /* rounded edges */
+  background: #000;         
+  border-radius: 4px;       
 }
 
 .cardContainer::-webkit-scrollbar-thumb:hover {
-  background: #333;         /* lighter black on hover */
+  background: #333;         
 }
 
-/* Firefox scrollbar styling */
+
 .cardContainer {
-  scrollbar-width: thin;     /* auto | thin | none */
-  scrollbar-color: #000 #222; /* thumb | track */
+  scrollbar-width: thin;    
+  scrollbar-color: #000 #222;
 }
 
 
-/* xmlns="http://www.w3.org/2000/svg"  */
+.songList::-webkit-scrollbar {
+  width: 8px;              
+}
+
+.songList::-webkit-scrollbar-track {
+  background: #ddd;          
+}
+
+.songList::-webkit-scrollbar-thumb {
+  background: #888;          
+  border-radius: 4px;        
+}
+
+.songList::-webkit-scrollbar-thumb:hover {
+  background: #666;          
+}
+
+
+.songList {
+  scrollbar-width: thin;           
+  scrollbar-color:#000 #222;     
+}
+
+@media (max-width: 500px) {
+.cardContainer {
+  overflow-y: auto;
+  height: 80vh;
+}
+
+}
