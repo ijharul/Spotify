@@ -82,7 +82,7 @@ async function getsongs(folder) {
 
 const playMusic = (track, pause = false) => {
   // currFolder holds the path like "songs/othersong"
-  currentSong.src = `http://127.0.0.1:5500/webde/Spotify/${currFolder}/${track}`;
+  currentSong.src = `${currFolder}/${track}`;
 
   if (!pause) {
     currentSong.play();
