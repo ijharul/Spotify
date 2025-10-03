@@ -98,7 +98,7 @@
 @media (max-width: 500px) {
 .cardContainer {
   overflow-y: auto;
-  height: 80vh;
+  height: 75vh;
 }
 
 }
